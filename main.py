@@ -5,15 +5,6 @@ import logging
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont, ImageOps
 
-# Configuraçaõ global de logging
-# O sistema configura para salvar os logs num arquivinho e mostrar no terminal.
-logging.basicConfig(level = logging.INFO,
-                    format = '%(asctime)s - %(levelname)s - %(message)s',
-                    handlers = [
-                        logging.FileHandler("log_processamento_imagem.log"),
-                        logging.StreamHandler()
-                    ])
-logger = logging.getLogger(__name__)
 
 #CONSTANTES GLOBAIS:
 LARGURA_LADRILHO = 250
